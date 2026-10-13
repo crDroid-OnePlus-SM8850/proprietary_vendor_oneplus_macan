@@ -862,16 +862,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/macan/proprietary/odm/etc/display/qdcm_calib_data_AA607_P_7_A0020_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_AA607_P_7_A0020_dsc_cmd_mode_panel.json \
     vendor/oneplus/macan/proprietary/odm/etc/dolby/display/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/display/dolby_vision.cfg \
     vendor/oneplus/macan/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
+    vendor/oneplus/macan/proprietary/odm/etc/fusionlight_profile/fusionlight_Main_2_3.json:$(TARGET_COPY_OUT_ODM)/etc/fusionlight_profile/fusionlight_Main_2_3.json \
     vendor/oneplus/macan/proprietary/odm/etc/horae/horae_target.conf:$(TARGET_COPY_OUT_ODM)/etc/horae/horae_target.conf \
+    vendor/oneplus/macan/proprietary/odm/etc/init/dvs-aidl-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/dvs-aidl-service.rc \
     vendor/oneplus/macan/proprietary/odm/etc/init/init.audio.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.audio.rc \
     vendor/oneplus/macan/proprietary/odm/etc/init/init.camera_debug_ui.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_debug_ui.rc \
     vendor/oneplus/macan/proprietary/odm/etc/init/init.camera_process.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_process.rc \
     vendor/oneplus/macan/proprietary/odm/etc/init/init.camera_upate.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_upate.rc \
     vendor/oneplus/macan/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
-    vendor/oneplus/macan/proprietary/odm/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/macan/proprietary/odm/etc/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/mixer_paths.xml \
     vendor/oneplus/macan/proprietary/odm/etc/resourcemanager.xml:$(TARGET_COPY_OUT_ODM)/etc/resourcemanager.xml \
-    vendor/oneplus/macan/proprietary/odm/etc/sdm_display_resolution_extn.xml:$(TARGET_COPY_OUT_ODM)/etc/sdm_display_resolution_extn.xml \
     vendor/oneplus/macan/proprietary/odm/etc/sensor/config/json_list:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/json_list \
     vendor/oneplus/macan/proprietary/odm/etc/sensor/config/lux_aod.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lux_aod.json \
     vendor/oneplus/macan/proprietary/odm/etc/sensor/config/macan_qrd_ois_system.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/macan_qrd_ois_system.json \
@@ -947,6 +947,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/macan/proprietary/odm/firmware/tp/macan/vnd_touch_project_config.xml:$(TARGET_COPY_OUT_ODM)/firmware/tp/macan/vnd_touch_project_config.xml \
     vendor/oneplus/macan/proprietary/odm/firmware/tp/macan/vnd_touch_scene_config_main.xml:$(TARGET_COPY_OUT_ODM)/firmware/tp/macan/vnd_touch_scene_config_main.xml \
     vendor/oneplus/macan/proprietary/odm/firmware/tp/macan/vnd_tp_fw_main.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/macan/vnd_tp_fw_main.bin \
+    vendor/oneplus/macan/proprietary/odm/firmware/uff_face.b00:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b00 \
+    vendor/oneplus/macan/proprietary/odm/firmware/uff_face.b01:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b01 \
+    vendor/oneplus/macan/proprietary/odm/firmware/uff_face.b02:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b02 \
+    vendor/oneplus/macan/proprietary/odm/firmware/uff_face.b03:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b03 \
+    vendor/oneplus/macan/proprietary/odm/firmware/uff_face.b04:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b04 \
+    vendor/oneplus/macan/proprietary/odm/firmware/uff_face.b05:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b05 \
+    vendor/oneplus/macan/proprietary/odm/firmware/uff_face.b06:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b06 \
+    vendor/oneplus/macan/proprietary/odm/firmware/uff_face.b07:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b07 \
+    vendor/oneplus/macan/proprietary/odm/firmware/uff_face.b08:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.b08 \
+    vendor/oneplus/macan/proprietary/odm/firmware/uff_face.mdt:$(TARGET_COPY_OUT_ODM)/firmware/uff_face.mdt \
     vendor/oneplus/macan/proprietary/odm/firmware/uff_gx.b00:$(TARGET_COPY_OUT_ODM)/firmware/uff_gx.b00 \
     vendor/oneplus/macan/proprietary/odm/firmware/uff_gx.b01:$(TARGET_COPY_OUT_ODM)/firmware/uff_gx.b01 \
     vendor/oneplus/macan/proprietary/odm/firmware/uff_gx.b02:$(TARGET_COPY_OUT_ODM)/firmware/uff_gx.b02 \
@@ -1066,11 +1076,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/macan/proprietary/odm/lib64/camera/revision.txt:$(TARGET_COPY_OUT_ODM)/lib64/camera/revision.txt \
     vendor/oneplus/macan/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/oneplus/macan/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
+    vendor/oneplus/macan/proprietary/vendor/etc/display/sdm_display_resolution_extn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/sdm_display_resolution_extn.xml \
     vendor/oneplus/macan/proprietary/vendor/etc/display_apollo_list_AA607_P_7_A0020_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display_apollo_list_AA607_P_7_A0020_dsc_cmd_mode_panel.xml \
     vendor/oneplus/macan/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
     vendor/oneplus/macan/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/oneplus/macan/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/oneplus/macan/proprietary/vendor/etc/ltm_config_AA607_P_7_A0020_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AA607_P_7_A0020_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/macan/proprietary/vendor/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/macan/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/oneplus/macan/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
     vendor/oneplus/macan/proprietary/vendor/firmware/CAMERA_ICP.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b02 \
@@ -1729,6 +1741,7 @@ PRODUCT_PACKAGES += \
     libsharebuffer \
     libsharebuffer_impl \
     libssd_det \
+    libstfaceunlockocl_uff \
     libtensorflowlite_oplus \
     libtfa98xx \
     libtrace \
@@ -1738,6 +1751,7 @@ PRODUCT_PACKAGES += \
     libwrapper_te \
     libyuvwrapper \
     libzlib \
+    vendor.dolby.dvs-V1-ndk \
     vendor.oplus.hardware.camera.aon-service-impl \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
@@ -1758,9 +1772,15 @@ PRODUCT_PACKAGES += \
     vendor.qti.camera.aon-impl.xml \
     vendor.qti.camera.offlinecamera-impl.xml \
     vendor.qti.camera.provider.xml \
+    dvs-aidl-service.xml \
     manifest_oplus_camera_rfi.xml \
     manifest_oplus_cammidasservice_aidl.xml \
     manifest_oplus_sendextcamcmd.xml \
     vendor.oplus.camera.aon-impl.xml \
     vendor.qti.camera.provider-service_64 \
+    dvs-aidl-service \
     vendor.oplus.hardware.cammidasservice-V1-service
+
+PRODUCT_COPY_FILES += \
+    vendor/oneplus/macan/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
+    vendor/oneplus/macan/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf

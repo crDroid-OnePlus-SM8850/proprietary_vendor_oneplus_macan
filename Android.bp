@@ -2776,7 +2776,7 @@ cc_prebuilt_library_shared {
                 "libcamxfdengine",
                 "libcom.qti.chinodeutils",
                 "libchilog",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libz",
                 "libc",
                 "libm",
@@ -7708,7 +7708,7 @@ cc_prebuilt_library_shared {
                 "libqmi_common_so",
                 "libqmi_encdec",
                 "libsns_direct_channel_stub",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libsensinghubapi",
                 "libsensinghubsession",
                 "vendor.oplus.hardware.camera_rfi-V1-service-impl",
@@ -8411,7 +8411,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "com.qti.sfw.settings",
                 "libcamxcommonutils",
-                "libtinyxml2",
+                "libtinyxml2-v36",
                 "libc++",
                 "libcutils",
                 "liblog",
@@ -16895,6 +16895,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libstfaceunlockocl_uff",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libstfaceunlockocl_uff.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libtensorflowlite_oplus",
     owner: "oneplus",
     strip: {
@@ -17108,6 +17132,31 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.dolby.dvs-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.dolby.dvs-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -17375,6 +17424,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "dvs-aidl-service.xml",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/vintf/manifest/dvs-aidl-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "manifest_oplus_camera_rfi.xml",
     owner: "oneplus",
     src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_camera_rfi.xml",
@@ -17428,6 +17486,37 @@ cc_prebuilt_binary {
     prefer: true,
     relative_install_path: "hw",
     soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "dvs-aidl-service",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/dvs-aidl-service",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libdolbyottcameracontrol",
+                "libsensorndkbridge",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
 }
 
 cc_prebuilt_binary {
