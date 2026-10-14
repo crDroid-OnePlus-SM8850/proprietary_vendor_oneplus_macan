@@ -902,6 +902,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/macan/proprietary/odm/etc/wifi/wcn7750/bdwlan.b0i:$(TARGET_COPY_OUT_ODM)/etc/wifi/wcn7750/bdwlan.b0i \
     vendor/oneplus/macan/proprietary/odm/etc/wifi/wcn7750/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/wcn7750/bdwlan.elf \
     vendor/oneplus/macan/proprietary/odm/etc/wifi/wcn7750/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/wcn7750/regdb.bin \
+    vendor/oneplus/macan/proprietary/odm/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic.bin \
+    vendor/oneplus/macan/proprietary/odm/firmware/aw8697_haptic_170.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_170.bin \
+    vendor/oneplus/macan/proprietary/odm/firmware/aw8697_haptic_170_soft.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_170_soft.bin \
     vendor/oneplus/macan/proprietary/odm/firmware/fastchg/24877/charging_hyper_mode_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/24877/charging_hyper_mode_config.txt \
     vendor/oneplus/macan/proprietary/odm/firmware/fastchg/bms_heating_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/bms_heating_config.txt \
     vendor/oneplus/macan/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
