@@ -870,6 +870,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/macan/proprietary/odm/etc/init/init.camera_process.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_process.rc \
     vendor/oneplus/macan/proprietary/odm/etc/init/init.camera_upate.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_upate.rc \
     vendor/oneplus/macan/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
+    vendor/oneplus/macan/proprietary/odm/etc/libnfc-mtp-SN220.conf_24877:$(TARGET_COPY_OUT_ODM)/etc/libnfc-mtp-SN220.conf_24877 \
     vendor/oneplus/macan/proprietary/odm/etc/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/mixer_paths.xml \
     vendor/oneplus/macan/proprietary/odm/etc/resourcemanager.xml:$(TARGET_COPY_OUT_ODM)/etc/resourcemanager.xml \
     vendor/oneplus/macan/proprietary/odm/etc/sensor/config/json_list:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/json_list \
