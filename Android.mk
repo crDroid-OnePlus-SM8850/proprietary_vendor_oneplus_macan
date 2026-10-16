@@ -6,7 +6,6 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),macan)
 
-$(call add-radio-file-sha1-checked,radio/abl.img,b03f8e3edf9fa76733d8603a989cb94619b12a7b)
 $(call add-radio-file-sha1-checked,radio/aop.img,4685fc84be2fa044283bcc92a62b666a340ae716)
 $(call add-radio-file-sha1-checked,radio/aop_config.img,b6f9d8e5cdada4078d90bc59809784ee2db09e50)
 $(call add-radio-file-sha1-checked,radio/bluetooth.img,62b8d3ed534075e29aab06be48f349c95f6b0a60)
